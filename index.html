@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Engineering Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height:  1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+        }
+        
+        nav a: hover {
+            background: #555;
+            border-radius: 4px;
+        }
+        
+        . container {
+            max-width:  1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform:  translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        . project-card h3 {
+            color:  #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .project-card p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tech-tag {
+            background: #f0f0f0;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size:  0.9rem;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding:  0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .project-links a:hover {
+            background: #764ba2;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Engineering Student | Project Portfolio</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Brief introduction about yourself, your engineering discipline, and your interests.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Engineering Projects</h2>
+            <div class="projects">
+                
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <h3>Project Name 1</h3>
+                    <p>Brief description of the project, what problem it solved, and your role.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">CAD</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <h3>Project Name 2</h3>
+                    <p>Brief description of the project, what problem it solved, and your role.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Simulink</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">Report</a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <h3>Project Name 3</h3>
+                    <p>Brief description of the project, what problem it solved, and your role.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Embedded Systems</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming:  Python, C++, MATLAB, etc.</li>
+                <li>Tools: CAD software, simulation tools, etc.</li>
+                <li>Engineering: Your specific engineering skills</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/tyrutledge">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Email</a>
+        </div>
+        <p>&copy; 2025 Your Name. All rights reserved. </p>
+    </footer>
+</body>
+</html>
